@@ -7,6 +7,7 @@
         <title>Document</title>
         <link href="/css/reset.css" rel="stylesheet"/>
         <link href="/css/style.css" rel='stylesheet'/>
+        <script src="/js/scripts.js" type="module" defer></script>
     </head>
     <body>
         <div class="background">
@@ -16,137 +17,193 @@
             <h1>Brandon Reed</h1>
         </div>
         <div class="content">
-            <div>
-                <section class="landing">
-                    <div class="shape"></div>
-                    <div class="shape-b"></div>
-                    <h2>It’s not about getting it done, it’s about getting it done right.</h2>
-                </section>
-                <section>
-                    <h2>About Me</h2>
-                </section>
-                <section>
-                    <p>I’m a creative who believes “It’s not about getting it done, it’s about getting it done right.” I’ve been a graphic designer for 15+ years and a Web Developer for 9+ years.<br/><br />
-                    I’ve worked for two marketing and branding firms and have been a lead web
-                    developer for a team of three.<br /><br />
-                    My current goal is to dive into the world of Game Development and Design. I have experience coding in HTML, CSS, Javascript/Jquery, REACT, PHP and Actionscript. I currently enjoy creating clean, responsive website themes with Wordpress backends.</p>
-                </section>
-                <section>
-                    <h2>Career Highlights</h2>
-                </section>
-                <section>
-                    <h3 class="job-name">Saga Marketing</h3>
-                    <h4 class="job-title">Technical Lead <span class="job-date">2013-2019</span></h4>
-                    <p><strong>Problem:</strong> Development team was disorganized and needed some modernization with it's practices and
-                    Methodologies<br />
-                    <strong>Solution:</strong> Became Technical Lead after introducing Agile Methodologies, SCRUM practices and migrated
-                    the development process from native HTML, CSS, and JS to a LAMP tech stack with Wordpress at it's core.</p>
-                    <p><strong>Problem:</strong> Any content updates that needed to be made had to be performed by a developer.<br />
-                    <strong>Solution:</strong> By including Advanced Custom Fields in the development process, we were able to create fields for data insertion regardless of skill level.</p>
-                    <p><strong>Problem:</strong> Web Applications had to be built from scratch each time.<br />
-                    <strong>Solution:</strong> Moved our development lifecycle to create bespoke themes for clients, while creating a library of reusable components that can be reused with web clients in the future with flexible content fields and ACF.</p>
-                    <p><strong>Problem:</strong> Web Applications were taking upwards of 5 months to build.<br />
-                    <strong>Solution:</strong> Reduced the development lifecycle to 2 months by introducing AGILE Methodologies and a component library.</p>
-                    <p><strong>Problem:</strong> They wanted to remake the company site.<br />
-                    <strong>Solution:</strong> Using my background in animation and design, I created all the HTML animations for the site. Created several components that would be used by the company to build content for the site.</p>
-                </section>
-                <section>
-                    <h4>Notable Clients:</h4>
-                    <ul>
-                        <li class="logos">
+            <section class="landing">
+                <div class="shape"></div>
+                <div class="shape-b"></div>
+                <h2>It’s not about getting it done, it’s about getting it done right.</h2>
+            </section>
+            <section>
+                <h2>About Me</h2>
+            </section>
+            <section>
+                <p>I’m a creative who believes “It’s not about getting it done, it’s about getting it done right.” I’ve been a graphic designer for 15+ years and a Web Developer for 9+ years.<br/><br />
+                I’ve worked for two marketing and branding firms and have been a lead web
+                developer for a team of three.<br /><br />
+                My current goal is to dive into the world of Game Development and Design. I have experience coding in HTML, CSS, Javascript/Jquery, REACT, PHP and Actionscript. I currently enjoy creating clean, responsive website themes with Wordpress backends.</p>
+            </section>
+            <section>
+                <h2>Career Highlights</h2>
+            </section>
+            <section>
+                <h3 class="job-name">Listen, Learn, Connect</h3>
+                <h4 class="job-title">Contract Developer <span class="job-date">2022</span></h4>
+                <a href='https://listenlearnconnect.org/profiles/' target="_blank"><button><p>View Site</p></button></a>
+                <p>
+                    <strong>Problem:</strong> The client required a feature for their website to manage projects<br />
+                    <strong>Solution:</strong> I authored a plugin that created a new post type and allowed for new custom template pages for the most flexibility. The single post pages were combined with ACF to create simple input fields for my client to include the content for the project. A plugin architecture was used to avoid the issue of a client changing themes and the functionality no longer working for them.
+                </p>
+            </section>
+            <section>
+                <h3 class="job-name">My Corpfolio</h3>
+                <h4 class="job-title">Contract Developer <span class="job-date">2020</span></h4>
+                <a href='https://mycorpfolio.com' target="_blank"><button><p>View Site</p></button></a>
+                <p>
+                    <strong>Problem:</strong> The Client wanted a form on their Wordpress site that we could output the results to a PDF for the customer to download<br />
+                    <strong>Solution:</strong> Using ACF, jsPDF.js and Bootstrap, I created a front end form that output to a multipage PDF when their customers hit the download button. 
+                </p>
+                <p>
+                    <strong>Problem:</strong> The Client wanted to collect demographic data<br />
+                    <strong>Solution:</strong> Using ACF, I created a front end form that save the user's demographic data to their profile.
+                </p>
+                <p>
+                    <strong>Problem:</strong> The Client wanted to see the demographic data, be allowed to sort data and download data as a CSV<br />
+                    <strong>Solution:</strong> I created an additional tab on the wordpress dashboard that allowed the client not only to see the data, but sort it and included a button that allowed the downloading of the data. I also went a step above and created a table that showed the percentage of users in each of the specific demographics that the site was collecting.
+                </p>
+            </section>
+            <section>
+                <h3 class="job-name">Chrono Chasers</h3>
+                <h4 class="job-title">Creator / Programmer / Artist <span class="job-date">2019-2020</span></h4>
+                <a href='https://play.google.com/store/apps/details?id=air.caxis.chrchase&hl=en_US&gl=US' target="_blank"><button><p>View Site</p></button></a>
+                <p>
+                    <strong>Problem:</strong> Wanted to dive deeper into a component way of building<br />
+                    <strong>Solution:</strong> Built an App using Adobe Animate and actionscript to create an endless runner platformer. Researched games such as Temple Run, Sailor Dash, and Sonic Dash to create a concept to explore the component way of building
+                </p>
+                <p>
+                    <strong>Problem:</strong> Needed Music for the game<br />
+                    <strong>Solution:</strong> Researched several games and soundtracks that make the game. Looked at games like Sonic the Hedgehog, Celeste, and Final Fantasy to explore music in short durations then hired a Musician that could match that aestethic.
+                </p>
+                <p>
+                    <strong>Problem:</strong> Need to test the game for bugs or issues<br />
+                    <strong>Solution:</strong> Created a CTA on social media to create a focus group of varied skill levels to test the quality of the game.
+                </p>
+                <p>
+                    <strong>Problem:</strong> Wanted to intergrate more features of Google's Play API into the game<br />
+                    <strong>Solution:</strong> Worked with distriqt to add Adobe Native Extentions(ANE's) into the game. It currently has a Leaderboard, Application Rater, Google Analytics, and a in-game shop.
+                </p>
+                <p>
+                    <strong>Problem:</strong> Whether to release the game as buy-to-play or a free-to-play model<br />
+                    <strong>Solution:</strong> Decided to release the game as a free-to-play game as is the current landscape of majority of mobile games to compete. Monetized the app through implementing Google Adsense and an in-game storefront by using ads at the end of each short play session and microtransactions for cosmetics
+                </p>
+            </section>
+            <section>
+                <h3 class="job-name">Saga Marketing</h3>
+                <h4 class="job-title">Technical Lead <span class="job-date">2013-2019</span></h4>
+                <a href='http://sagamktg.com' target="_blank"><button><p>View Site</p></button></a>
+                <p><strong>Problem:</strong> Development team was disorganized and needed some modernization with it's practices and
+                Methodologies<br />
+                <strong>Solution:</strong> Became Technical Lead after introducing Agile Methodologies, SCRUM practices and migrated the development process from native HTML, CSS, and JS to a LAMP tech stack with Wordpress at it's core. Oversaw the design, development and testing of 50+ corporate web applications for clients like the City of Detroit, RGA,
+                Cornerstone Schools, Teach 313, NAACP, GAA Solutions, and United Way along with SAGA MTKG’s own website. Managed a team of four along with additional contractors to complete day-to-day development tasks to meet company appointed deadlines</p>
+                <p><strong>Problem:</strong> Any content updates that needed to be made had to be performed by a developer.<br />
+                <strong>Solution:</strong> By including Advanced Custom Fields in the development process, we were able to create fields for data insertion regardless of skill level.</p>
+                <p><strong>Problem:</strong> Web Applications had to be built from scratch each time.<br />
+                <strong>Solution:</strong> Moved our development lifecycle to create bespoke themes for clients, while creating a library of reusable components that can be reused with web clients in the future with flexible content fields and ACF.</p>
+                <p><strong>Problem:</strong> Web Applications were taking upwards of 5 months to build.<br />
+                <strong>Solution:</strong> Created a strategy that Increased workflow by creating development templates, decreasing website design and development
+                time from 3+ months to 1.5 months by integrating Bootstrap, Jquery, Github, Wordpress, ACF, AGILE Methodologies and a custom Component library.</p>
+                <p><strong>Problem:</strong> They wanted to remake the company site.<br />
+                <strong>Solution:</strong> Using my background in animation and design, I created all the HTML animations for the site. Created several components that would be used by the company to build content for the site.</p>
+            </section>
+            <section>
+                <h4>Notable Clients:</h4>
+                <ul>
+                    <li class="logos">
+                        <a href="http://teach313.org" target="_blank" alt="Teach 313">
                             <img src="/img/T3Logo.png" />
-                        </li>
-                        <li class="logos">
-                            <img src="/img/RGALogo.gif" />
-                        </li>
-                        <li class="logos">
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <a href="http://reneegodin.com/" target="_blank" alt="Renee Godin Agency">
+                            <img src="/img/RGALogo.png" />
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <a href="http://www.compass-strategies.com/" target="_blank" alt="Compass Strategies">
                             <img src="/img/ComLogo.png" />
-                        </li>
-                        <li class="logos">
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <a href="https://sandersforjustice.com/" target="_blank" alt="Sanders for Justice">
                             <img src="/img/Sanlogo.png" />
-                        </li>
-                        <li class="logos">
-                            <img src="/img/UWLogo.svg" />
-                        </li>
-                        <li class="logos">
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <img src="/img/UWLogo.svg" />
+                    </li>
+                    <li class="logos">
+                        <a href="https://parkdetroit.us/" target="_blank" alt="Renee Godin Agency">
                             <img src="/img/Detlogo.png" />
-                        </li>
-                        <li class="logos">
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <a href="https://gaasolutions.com/" target="_blank" alt="Renee Godin Agency">
                             <img src="/img/GAALogo.svg" />
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Contract Developer</h3>
-                    <h4>I've Provided Web Solutions for:</h4>
-                    <ul>
-                        <li class="cards">
-                            <a href="https://increase.design" target="_blank" alt="Increase Design">
-                                <div class="card">
-                                    <img src="/img/IBSite.png" alt='Listen Learn Connect' />
-                                    <div class="overlay"></div>
-                                    <h2>Increase Branding</h2>
-                                    <p>Created Loading Page and Logo Animation (Animation is Random) along with various CSS adjustments across the site.<br/>
-                                    <strong>Used:</strong> Codeigniter, PHP</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="https://mycorpfolio.com" target="_blank" alt="My Corpfolio">
-                                <div class="card">
-                                    <img src="/img/MyCSite.png" alt='Listen Learn Connect' />
-                                    <div class="overlay"></div>
-                                    <h2>My Corpfolio</h2>
-                                    <p>Created a front end form using ACF to output content that could be downloaded as a PDF.<br />
-                                    <strong>Used:</strong> Wordpress, ACF, jsPDF.js</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="https://listenlearnconnect.org/profiles/" target="_blank" alt="Listen Learn Connect">
-                                <div class="card">
-                                    <img src="/img/LLCsite.png" alt='Listen Learn Connect' />
-                                    <div class="overlay"></div>
-                                    <h2>Learn, Listen, Connect</h2>
-                                    <p>Created a plugin to be used for their platform that takes custom post to display custom projects on single pages, a search template page and a archive page that has a masonry<br />
-                                        <strong>Used:</strong> Wordpress, ACF, Masonry.js
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="cards">
-                            <a href="https://namicdetroit.com" target="_blank" alt="Namic Detroit">
-                                <div class="card">
-                                    <img src="/img/NDSite.png" alt='Listen Learn Connect'/>
-                                    <div class="overlay"></div>
-                                    <h2>Namic Detroit</h2>
-                                    <p>Developed the website for the NAMIC Organization that uses components that allows for the client to update the website.<br />
-                                        <strong>Used:</strong> Wordpress, ACF, Slick.js
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h3></h3>
-                    <h4>I've also worked with:</h4>
-                    <ul>
-                        <li class="logos">
+                        </a>
+                    </li>
+                    <li class="logos">
+                        <a href="https://www.ellisislandtea.com/" target="_blank" alt="Renee Godin Agency">
                             <img src="/img/EITLogo.webp" />
-                        </li>
-                        <li class="logos">
-                            <img src="/img/YFLogo.webp" />
-                        </li>
-                        <li class="logos">
-                            <img src="/img/FELogo.svg"/>
-                        </li>
-                        <li class="logos">
-                            <img src="/img/VFLogo-2.png" />
-                        </li>
-                    </ul>
-                </section>
-            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!--<section>
+                <h3>Contract Developer</h3>
+                <h4>I've Provided Web Solutions for:</h4>
+                <ul>
+                    <li class="cards">
+                        <a target="_blank" alt="Increase Design" data-link="increase-branding">
+                            <div class="card">
+                                <img src="/img/IBSite.png" alt='Listen Learn Connect' />
+                                <div class="overlay"></div>
+                                <h2>Increase Branding</h2>
+                                <p>Created Loading Page and Logo Animation (Animation is Random) along with various CSS adjustments across the site.<br/>
+                                <strong>Used:</strong> Codeigniter, PHP</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="https://mycorpfolio.com" target="_blank" alt="My Corpfolio" data-link="my-corpfolio">
+                            <div class="card">
+                                <img src="/img/MyCSite.png" alt='Listen Learn Connect' />
+                                <div class="overlay"></div>
+                                <h2>My Corpfolio</h2>
+                                <p>Created a front end form using ACF to output content that could be downloaded as a PDF.<br />
+                                <strong>Used:</strong> Wordpress, ACF, jsPDF.js</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="https://listenlearnconnect.org/profiles/" target="_blank" alt="Listen Learn Connect" data-link="listen-learn-connect">
+                            <div class="card">
+                                <img src="/img/LLCsite.png" alt='Listen Learn Connect' />
+                                <div class="overlay"></div>
+                                <h2>Learn, Listen, Connect</h2>
+                                <p>Created a plugin to be used for their platform that takes custom post to display custom projects on single pages, a search template page and a archive page that has a masonry<br />
+                                    <strong>Used:</strong> Wordpress, ACF, Masonry.js
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="https://namicdetroit.com" target="_blank" alt="Namic Detroit" data-link="namic-detroit">
+                            <div class="card">
+                                <img src="/img/NDSite.png" alt='Listen Learn Connect'/>
+                                <div class="overlay"></div>
+                                <h2>Namic Detroit</h2>
+                                <p>Developed the website for the NAMIC Organization that uses components that allows for the client to update the website.<br />
+                                    <strong>Used:</strong> Wordpress, ACF, Slick.js
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>-->
+            <section>
+                
+            </section>
+            <footer>
+
+            </footer>
         </div>
     </body>
 </html>

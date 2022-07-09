@@ -4,7 +4,11 @@ html, body{
 }
 
 :root{
-    
+    --pri-color:#ff0000;
+    --sec-color: #ff0000;
+    --sec-shadow: #cc0000;
+    --tri-color: #0000ff;
+    --white-color:#ffffff;
 }
 
 .background{
@@ -24,6 +28,7 @@ html, body{
     width: 100%;
     background-color:#ffffff;
     overflow-y:scroll;
+    overflow-x:hidden;
     position:relative;
 }
 
@@ -57,7 +62,8 @@ h4{
 }
 
     h4 span {
-        color: #bbbbbb;
+        font-weight:700;
+        color: var(--tri-color);
     }
 
 p {
@@ -71,11 +77,34 @@ p {
 
     p strong{
         font-weight:700;
-        color:#888888;
+        color:var(--tri-color);
+    }
+
+button{
+    width:180px;
+    padding:10px 0px;
+    background-color:var(--sec-color);
+    border-radius: 20px;
+    margin-top:5px;
+    transition:background .3s;
+}
+
+    button p{
+        padding:0;
+        margin:0;
+        width:100%;
+        text-align:center;
+        text-transform:uppercase;
+        font-weight:700;
+        color:var(--white-color);
+    }
+
+    button:hover {
+        background-color: var(--sec-shadow);
     }
 
 section{
-    margin:20px 20px 0px;
+    padding:20px 20px 0px;
     width:100%;
     display: block;
     float:left;
@@ -84,7 +113,7 @@ section{
 
 section.landing{
     position: relative;
-    padding: 170px 0px;
+    padding: 170px 20px;
 }
 
 
@@ -105,7 +134,7 @@ section.landing .shape-b {
 section.landing .shape {
     width: 460px;
     height: 460px;
-    animation: blobs 15s ease-in-out infinite alternate;
+    animation: blobs 16s ease-in-out infinite alternate;
     background-color:#ff0000;
     border-radius: 26% 74% 61% 39% / 54% 67% 33% 46%
 }
@@ -113,7 +142,7 @@ section.landing .shape {
 section.landing .shape-b {
     width: 460px;
     height: 460px;
-    animation: blobs 11s ease-in-out infinite alternate-reverse;
+    animation: blobs 19s ease-in-out infinite alternate-reverse;
     border: #ff0000 3px solid;
     border-radius: 74% 26% 39% 61% / 67% 54% 46% 33%
 }
@@ -132,8 +161,6 @@ section>ul {
     float:none;
     width:100%;
 }
-
-    
 
 .card {
     width: 80%;
@@ -285,13 +312,20 @@ section>ul {
     }
 
     section {
-        margin: 30px 30px 0px;
+        padding: 30px 30px 0px;
+        transition-delay:.2s;
     }
 
     section > p{
         padding:5px 0px 5px 10px;
         border-left:4px solid #000000;
+        transition:padding .3s;
+        transition-delay: 0s;
     }
+
+        section > p:hover{
+            padding:5px 0px 5px 15px;
+        }
 
         .cards {
             width: 50%;
